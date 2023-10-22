@@ -1,66 +1,10 @@
-## Foundry
+##Description
+This is a smart contract written in foundry which enable you to import a NFT to your account through the forge commands. There is a src folder where 2 contracts are written, one for BasicNFT and the other for a DynamicNFT(it changes as per your wish). The scripts for interacting and deploying these contracts are also present in the Script folder. Further the tests for the contracts are in test folder.
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+I have used libraries such as openzeppelin and foundry devOpsTools along with the forge-std library for this project.
 
-Foundry consists of:
+openzeppelin is used for getting the ERC721 contract which I have inherited in my projects.
+devOpsTools is used for getting the most recently deployed contract.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+Refer to Makefile for further assistance.
 
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
